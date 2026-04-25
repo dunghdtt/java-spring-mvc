@@ -7,6 +7,7 @@ import java.util.List;
 @Repository
 public interface UserRepository extends CrudRepository<User, Long> {
     User save(User hoidanit);
+     void deleteById(long id);
     List<User> findOneByEmail(String email);
     List<User> findAll();
     User findById(long id);
